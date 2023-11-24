@@ -13,6 +13,7 @@ db_config = {
 connection = db.connect(**db_config)
 cursor = connection.cursor()
 
+#SQL query for number of customers purchasing more than 5 books
 sql_query2b= pd.read_sql_query('''
 #Create common table expression(CTE) that save temporary table
 WITH CUSTOMER_PURCHASE AS

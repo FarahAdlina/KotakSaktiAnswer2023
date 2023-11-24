@@ -13,6 +13,7 @@ db_config = {
 connection = db.connect(**db_config)
 cursor = connection.cursor()
 
+#SQL query for a list of customers who never purchased anything
 sql_query2c= pd.read_sql_query('''
 SELECT
 	#Show only a single time

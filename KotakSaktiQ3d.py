@@ -13,6 +13,7 @@ db_config = {
 connection = db.connect(**db_config)
 cursor = connection.cursor()
 
+#SQL query for list of book purchased with the users
 sql_query2d= pd.read_sql_query('''
 SELECT
 	#Show book list with buyers name
